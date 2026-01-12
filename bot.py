@@ -46,14 +46,14 @@ class MyClient(discord.Client):
         if message.author == self.user:
             return
 
-        # i use a  if statemantes to check the bot, is not efficient 
-        # the last message is for my girlfriend
+        # i use a  if statement to check the bot, is not efficient but is simple
+        
         if message.content.startswith('$hello'):
             await message.channel.send('Hello World!')
         
         if message.content.startswith('$bye'):
             await message.channel.send('Good Bye!')
-            
+        # this message is for impress my girlfriend 🫡 
         if message.content.startswith('$Quitze'):
             await message.channel.send(mensaje)
         # this message is for impress my girlfriend 🫡
