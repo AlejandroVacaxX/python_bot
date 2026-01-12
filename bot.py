@@ -3,7 +3,7 @@ from dotenv import load_dotenv # i use this library for safety, so i dont have t
 import os
 import requests
 import json 
-# it seems tha the meme api is down, so in the test it didnt work
+# it seems that the meme API is down, so in the test it didnt work
 def get_meme():
   response = requests.get('https://meme-api.com/gimme')
   json_data = response.json()
@@ -18,7 +18,7 @@ def get_meme():
       # i send this message to the discord server
       return "i can´t find a meme :( look up the console."
 
-# this is the funcion that make the API request to get a dog picture
+# this is the function that make the API request to get a dog picture
 def get_dog():
     try:
         response = requests.get('https://dog.ceo/api/breeds/image/random')
